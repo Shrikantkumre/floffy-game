@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gamecontainer {
+    height: 500px;
+    width: 300px;
+    /* background-color: red; */
+    background-image: url(https://raw.githubusercontent.com/ImKennyYip/flappy-bird/master/flappybirdbg.png);
+    background-size: cover;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.character {
+    height: 20px;
+    width: 20px;
+    /* background-color: orange; */
+    background-image: url(https://raw.githubusercontent.com/ImKennyYip/flappy-bird/master/flappybird.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* mix-blend-mode:multiply; */
+    position: absolute;
+    /* transform: rotate(90deg); */
+    top: 50%;
+    left: 10px;
+    transition: all 0.2s ease-in-out;
+    /* border-radius: 50%; */
+}
+
+.rodContainer {
+    position: absolute;
+    height: 100%;
+    /* right: 20px; */
+}
+
+.rodTop {
+    height: 100%;
+    width: 62px;
+    /* background-color: blueviolet; */
+    background-image: url(https://raw.githubusercontent.com/ImKennyYip/flappy-bird/master/toppipe.png);
+    position: absolute;
+    top: -60%;
+    /* right: -40px; */
+    background-size: cover;
+    transform: scaleX(0.6);
+}
+
+.rodBottom {
+    height: 100%;
+    width: 62px;
+    background-color: rgb(43, 226, 58);
+    position: absolute;
+    background-image: url(https://raw.githubusercontent.com/ImKennyYip/flappy-bird/master/bottompipe.png);
+    top: 60%;
+    background-size: cover;
+    transform: scaleX(0.6);
+    /* right: -40px; */
+
+}
